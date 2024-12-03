@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.deleteUserController">
+   <children>
+      <JFXComboBox fx:id="userComboBox" focusColor="#185e3d" layoutX="235.0" layoutY="270.0" prefHeight="25.0" prefWidth="300.0" promptText="Selecione o usuário" />
+      <Text layoutX="235.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário" />
+      <JFXButton layoutX="24.0" layoutY="19.0" onAction="#goBack" style="-fx-background-color: #b00020;" text="Voltar" textFill="WHITE" />
+      <JFXButton layoutX="236.0" layoutY="350.0" onAction="#deleteUser" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Deletar usuário" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

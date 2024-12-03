@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.NewUserController">
+   <children>
+      <Text layoutX="262.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuário" />
+      <TextField fx:id="nameTextField" layoutX="262.0" layoutY="228.0" prefHeight="16.0" prefWidth="300.0" promptText="Digite o usuário" />
+      <Text layoutX="262.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+      <PasswordField fx:id="passwordTextField" layoutX="263.0" layoutY="291.0" prefHeight="27.0" prefWidth="300.0" promptText="Digite a senha" />
+      <Text layoutX="263.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirme a senha" />
+      <PasswordField fx:id="passwordConfirmationTextField" layoutX="264.0" layoutY="361.0" prefHeight="27.0" prefWidth="300.0" promptText="Digite a senha novamente" />
+      <JFXCheckBox fx:id="administratorCheckBox" layoutX="264.0" layoutY="415.0" text="Perfil de administrador" />
+      <Label layoutX="235.0" layoutY="140.0" text="Insira as informações" textFill="#185e3d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="260.0" layoutY="468.0" onAction="#signup" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#goBack" style="-fx-background-color: #b00020;" text="Voltar" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0" spacing="40.0">
+         <children>
+            <Label text="Escolha uma opção" textFill="#185e3d">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="manageProductionsButton" onAction="#manageProductions" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Gerenciar Produções" textFill="WHITE" />
+            <JFXButton onAction="#manageCows" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Gerenciar Vacas" textFill="WHITE" />
+            <JFXButton fx:id="manageUsersButton" onAction="#manageUsers" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Gerenciar Usuários" textFill="WHITE" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#logout" style="-fx-background-color: #b00020;" text="Sair" textFill="WHITE" />
+   </children>
+</AnchorPane>

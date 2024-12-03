@@ -3,11 +3,12 @@ package com.controllers;
 import com.App;
 import javafx.fxml.FXML;
 
-public class ManageCowsController {
+public class ManageUsersController {
+
     @FXML
-    public void newCow(){
+    public void newUser(){
         try{
-            App.trocarTela("newCow.fxml");
+            App.trocarTela("newUser.fxml");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -15,9 +16,9 @@ public class ManageCowsController {
     }
 
     @FXML
-    public void updateCow(){
+    public void updateUser(){
         try{
-            App.trocarTela("updateCow.fxml");
+            App.trocarTela("updateUser.fxml");
         }
         catch (Exception e){
             e.printStackTrace();
@@ -25,9 +26,9 @@ public class ManageCowsController {
     }
 
     @FXML
-    public void deleteCow(){
+    public void deleteUser(){
         try{
-            App.trocarTela("deleteCow.fxml");
+            App.trocarTela("deleteUser.fxml");
         }
         catch (Exception e){
             e.printStackTrace();

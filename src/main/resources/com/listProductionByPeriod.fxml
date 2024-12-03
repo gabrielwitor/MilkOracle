@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ListProductionByPeriodController">
+   <children>
+      <TableView fx:id="productionTableView" layoutX="101.0" layoutY="217.0" prefHeight="300.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="eartagColumn" text="Brinco" />
+            <TableColumn fx:id="productionColumn" prefWidth="118.39996337890625" text="Produção (litros)" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="104.0" layoutY="150.0" onAction="#listByDay" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #185e3d;" text="Listar por dia" textFill="WHITE" />
+      <JFXButton layoutX="574.0" layoutY="150.0" onAction="#listByMonth" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #185e3d;" text="Listar por mês" textFill="WHITE" />
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#goBack" style="-fx-background-color: #b00020;" text="Voltar" textFill="WHITE" />
+      <Label layoutX="232.0" layoutY="85.0" text="Insira as informações" textFill="#185e3d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="dataSelectorComboBox" focusColor="#185e3d" layoutX="254.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" promptText="Selecione a data" />
+      <JFXButton layoutX="255.0" layoutY="528.0" onAction="#displayProduction" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Listar produção" textFill="WHITE" />
+   </children>
+</AnchorPane>

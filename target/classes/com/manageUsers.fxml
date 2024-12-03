@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ManageCowsController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ManageUsersController">
    <children>
       <VBox alignment="CENTER" layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="400.0" spacing="40.0">
          <children>
@@ -15,9 +15,9 @@
                   <Font name="System Bold" size="36.0" />
                </font>
             </Label>
-            <JFXButton onAction="#newCow" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Cadastrar vaca" textFill="WHITE" />
-            <JFXButton onAction="#updateCow" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Atualizar vaca" textFill="WHITE" />
-            <JFXButton onAction="#deleteCow" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Excluír vaca" textFill="WHITE" />
+            <JFXButton onAction="#newUser" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Criar novo usuário" textFill="WHITE" />
+            <JFXButton onAction="#updateUser" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Atualizar usuário" textFill="WHITE" />
+            <JFXButton onAction="#deleteUser" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Excluir usuário" textFill="WHITE" />
          </children>
       </VBox>
       <JFXButton layoutX="14.0" layoutY="14.0" onAction="#goBack" style="-fx-background-color: #b00020;" text="Voltar" textFill="WHITE" />

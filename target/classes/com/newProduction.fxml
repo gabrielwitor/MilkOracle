@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.NewProductionController">
+   <children>
+      <DatePicker fx:id="productionDate" layoutX="248.0" layoutY="340.0" prefHeight="16.0" prefWidth="300.0" promptText="Selecione o dia da produção" />
+      <JFXComboBox fx:id="cowComboBox" focusColor="#185e3d" layoutX="249.0" layoutY="217.0" prefHeight="25.0" prefWidth="300.0" promptText="Selecione a vaca" />
+      <Text layoutX="249.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaca" />
+      <Text layoutX="248.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Litros" />
+      <TextField fx:id="litersTextField" layoutX="248.0" layoutY="281.0" prefHeight="16.0" prefWidth="300.0" promptText="Digite a produção em litros" />
+      <Text layoutX="248.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data da produção" />
+      <Label layoutX="235.0" layoutY="99.0" text="Insira as informações" textFill="#185e3d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="250.0" layoutY="444.0" onAction="#newProduction" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #185e3d;" text="Registrar produção" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#goBack" style="-fx-background-color: #b00020;" text="Voltar" textFill="WHITE" />
+   </children>
+</AnchorPane>
